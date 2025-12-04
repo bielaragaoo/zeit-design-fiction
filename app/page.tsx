@@ -21,7 +21,7 @@ export default function Home() {
       </main>
 
       <footer className="home-footer">
-        <p>&copy; 2024 Zeit Design Fiction. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Zeit Design Fiction. Todos os direitos reservados.</p>
       </footer>
     </div>
   );

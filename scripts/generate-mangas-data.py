@@ -64,7 +64,7 @@ for idx, config in enumerate(mangas_config):
     output += f"    title: '{config['title']}',\n"
     output += f"    coverImage: '{'/mangas/' + config['id'] + '/capa.png' if has_cover else ''}',\n"
     output += f"    description: '{config['description']}',\n"
-    output += "    author: 'Zeit Design',\n"
+    output += "    author: '',\n"
     output += "    chapters: [\n"
     
     for chapter in chapters:

@@ -99,6 +99,10 @@
   margin: 0;
 }
 
+.manga-card-author:empty {
+  display: none;
+}
+
 .manga-card-description {
   font-size: 14px;
   color: var(--text-secondary);

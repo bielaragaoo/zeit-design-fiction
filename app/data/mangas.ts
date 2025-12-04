@@ -18,8 +18,8 @@ export const mangas: Manga[] = [
     id: 'akari',
     title: 'Akari',
     coverImage: '/mangas/akari/capa.png',
-    description: 'A história de Akari, uma jornada única e emocionante.',
-    author: 'Zeit Design',
+    description: 'Rio de Janeiro, 2050. Akari Mizuta, especialista em Circularidade e Identidades Digitais, combate o greenwashing criando sistemas de rastreabilidade que honram o trabalho invisibilizado nas favelas do Rio. Com implantes retinais e baixa visão desde nascença, elu vê através das mentiras corporativas para construir justiça material verdadeira.',
+    author: '',
     chapters: [
       {
         id: 'akari-1',
@@ -83,8 +83,8 @@ export const mangas: Manga[] = [
     id: 'dami',
     title: 'Dami',
     coverImage: '/mangas/dami/capa.png',
-    description: 'As aventuras de Dami em um mundo cheio de desafios.',
-    author: 'Zeit Design',
+    description: 'Vitória, 2050. Damião "Dami" Luembe, especialista em Sistemas Sociais e Governança, luta pela acessibilidade comunicacional em serviços públicos. Surdo desde nascença, LIBRAS é sua primeira língua. No tribunal e além, elu trabalha para garantir que pessoas surdas sejam verdadeiramente ouvidas e compreendidas.',
+    author: '',
     chapters: [
       {
         id: 'dami-1',
@@ -147,8 +147,8 @@ export const mangas: Manga[] = [
     id: 'farid',
     title: 'Farid',
     coverImage: '/mangas/farid/capa.png',
-    description: 'A saga épica de Farid e suas descobertas.',
-    author: 'Zeit Design',
+    description: 'Damasco, 2044. Farid Al-Khatib, um jovem refugiado sírio, perde a mão direita em uma explosão. Com uma prótese mioelétrica integrada aos nervos, elu transforma sua experiência de trauma em missão: usar tecnologia para verificação cívica e justiça descentralizada, protegendo outros refugiados através de sistemas transparentes.',
+    author: '',
     chapters: [
       {
         id: 'farid-1',
@@ -212,8 +212,8 @@ export const mangas: Manga[] = [
     id: 'iara',
     title: 'Iara',
     coverImage: '/mangas/iara/capa.png',
-    description: 'A jornada mística de Iara através de terras encantadas.',
-    author: 'Zeit Design',
+    description: 'Manaus, Amazônia. Iara, uma mulher indígena Tukano, une sabedoria ancestral com ciência de biomateriais para criar soluções regenerativas. Desde criança, quando uma doutora itinerante plantou a semente do cuidado em sua mão queimada, Iara desenvolve materiais vivos que cicatrizam, adaptam-se e regeneram, honrando tanto a floresta quanto a tecnologia.',
+    author: '',
     chapters: [
     ],
   },
@@ -221,8 +221,8 @@ export const mangas: Manga[] = [
     id: 'lara',
     title: 'Lara',
     coverImage: '/mangas/lara/capa.png',
-    description: 'As aventuras de Lara em busca de respostas.',
-    author: 'Zeit Design',
+    description: 'São Paulo, 2050. Lara Valença, arquiteta em cadeira de rodas, revoluciona o biodesign radical. Com óculos de realidade aumentada que mapeiam acessibilidade em 360 graus, ela revela um problema silencioso: espaços "acessíveis" que mataram a natureza. Lara cria cidades biofílicas onde acessibilidade e vida se encontram, transformando concreto em ecossistemas vivos.',
+    author: '',
     chapters: [
       {
         id: 'lara-1',
@@ -308,8 +308,8 @@ export const mangas: Manga[] = [
     id: 'theo',
     title: 'Theo',
     coverImage: '/mangas/theo/capa.png',
-    description: 'A história de Theo e sua busca pela verdade.',
-    author: 'Zeit Design',
+    description: 'Recife, 2035. Teodora, uma menina parda de primeira geração na escola, descobre que não aprende com palavras — aprende com ritmo, toque e vibração. A matemática não é abstrata para ela: é corporal, é música, é dança. Theo transforma sua forma única de aprender em sistemas de computação espacial e educação imersiva que ressoam com o corpo inteiro.',
+    author: '',
     chapters: [
       {
         id: 'theo-1',

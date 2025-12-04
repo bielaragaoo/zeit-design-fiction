@@ -21,7 +21,7 @@ export default function MangaCard({ manga }: MangaCardProps) {
       </div>
       <div className="manga-card-content">
         <h3 className="manga-card-title">{manga.title}</h3>
-        <p className="manga-card-author">{manga.author}</p>
+        {manga.author && <p className="manga-card-author">{manga.author}</p>}
         <p className="manga-card-description">{manga.description}</p>
       </div>
     </Link>
