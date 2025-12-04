@@ -1,19 +1,16 @@
 .manga-card {
   display: flex;
   flex-direction: column;
-  background: var(--bg-card);
-  border-radius: 16px;
+  background: transparent;
+  border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid var(--border);
   cursor: pointer;
   position: relative;
 }
 
 .manga-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px var(--shadow);
-  border-color: var(--accent);
 }
 
 .manga-card-image-wrapper {
@@ -21,7 +18,15 @@
   width: 100%;
   padding-top: 150%;
   overflow: hidden;
-  background: var(--bg-secondary);
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.manga-card:hover .manga-card-image-wrapper {
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(255, 107, 107, 0.3);
 }
 
 .manga-card-image {
@@ -47,7 +52,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.8) 100%
   );
   display: flex;
   align-items: flex-end;
@@ -64,7 +69,7 @@
 .manga-card-read {
   background: var(--accent);
   color: white;
-  padding: 10px 24px;
+  padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
@@ -78,7 +83,7 @@
 }
 
 .manga-card-content {
-  padding: 20px;
+  padding: 20px 0 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -90,6 +95,11 @@
   color: var(--text-primary);
   margin: 0;
   line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.manga-card:hover .manga-card-title {
+  color: var(--accent);
 }
 
 .manga-card-author {
@@ -116,16 +126,10 @@
 
 @media (max-width: 768px) {
   .manga-card-content {
-    padding: 16px;
+    padding: 16px 0 0;
   }
 
   .manga-card-title {
     font-size: 18px;
   }
-
-  .manga-card-description {
-    font-size: 13px;
-    -webkit-line-clamp: 2;
-  }
 }
-

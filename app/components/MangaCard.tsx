@@ -16,13 +16,11 @@ export default function MangaCard({ manga }: MangaCardProps) {
           className="manga-card-image"
         />
         <div className="manga-card-overlay">
-          <span className="manga-card-read">Ler Agora</span>
+          <span className="manga-card-read">Ver Detalhes</span>
         </div>
       </div>
       <div className="manga-card-content">
         <h3 className="manga-card-title">{manga.title}</h3>
-        {manga.author && <p className="manga-card-author">{manga.author}</p>}
-        <p className="manga-card-description">{manga.description}</p>
       </div>
     </Link>
   );

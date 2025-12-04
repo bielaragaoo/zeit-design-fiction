@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   title: 'Zeit Design Fiction - Mangás',
@@ -13,7 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main style={{ paddingTop: '70px' }}>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }

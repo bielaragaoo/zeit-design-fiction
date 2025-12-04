@@ -1,22 +1,21 @@
 .home-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 200px);
 }
 
-.home-header {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-  border-bottom: 1px solid var(--border);
+.hero-section {
   padding: 60px 20px;
   text-align: center;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--border);
 }
 
-.header-content {
-  max-width: 1200px;
+.hero-content {
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.site-title {
+.hero-title {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 16px;
@@ -26,15 +25,14 @@
   background-clip: text;
 }
 
-.site-subtitle {
+.hero-subtitle {
   font-size: 18px;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
 
-.home-main {
-  flex: 1;
+.mangas-section {
   padding: 60px 20px;
   max-width: 1400px;
   margin: 0 auto;
@@ -43,47 +41,37 @@
 
 .mangas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   width: 100%;
 }
 
-.home-footer {
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
-  padding: 30px 20px;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 14px;
+@media (max-width: 1024px) {
+  .mangas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-  .home-header {
-    padding: 40px 20px;
+  .hero-section {
+    padding: 40px 16px;
   }
 
-  .site-title {
-    font-size: 36px;
+  .hero-title {
+    font-size: 32px;
   }
 
-  .site-subtitle {
+  .hero-subtitle {
     font-size: 16px;
   }
 
-  .home-main {
+  .mangas-section {
     padding: 40px 16px;
   }
 
   .mangas-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 }
-
-@media (max-width: 480px) {
-  .mangas-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-

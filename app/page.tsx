@@ -5,24 +5,20 @@ import './page.css';
 export default function Home() {
   return (
     <div className="home-container">
-      <header className="home-header">
-        <div className="header-content">
-          <h1 className="site-title">Zeit Design Fiction</h1>
-          <p className="site-subtitle">Explore histórias de mangá criativas e envolventes</p>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Mangás Originais</h1>
+          <p className="hero-subtitle">Explore histórias criativas e envolventes</p>
         </div>
-      </header>
+      </section>
 
-      <main className="home-main">
+      <section className="mangas-section">
         <div className="mangas-grid">
           {mangas.map((manga) => (
             <MangaCard key={manga.id} manga={manga} />
           ))}
         </div>
-      </main>
-
-      <footer className="home-footer">
-        <p>&copy; 2025 Zeit Design Fiction. Todos os direitos reservados.</p>
-      </footer>
+      </section>
     </div>
   );
 }
