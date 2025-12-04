@@ -111,6 +111,11 @@ export default function MangaPage({ params }: PageProps) {
                     alt={`Página ${index + 1}`}
                     className="manga-page-image"
                     loading={index < 3 ? "eager" : "lazy"}
+                    onError={(e) => {
+                      console.error('Erro ao carregar imagem:', page);
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
                   />
                 </div>
               ))}
@@ -145,6 +150,9 @@ export default function MangaPage({ params }: PageProps) {
         <main className="manga-page-main">
           <div className="no-chapters">
             <p>Esta história ainda não possui páginas publicadas.</p>
+            <p style={{ marginTop: '10px', fontSize: '14px', color: '#888' }}>
+              Capítulos encontrados: {manga.chapters.length}
+            </p>
           </div>
         </main>
       )}
