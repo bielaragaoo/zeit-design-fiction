@@ -20,7 +20,13 @@ export default function MangaPage({ params }: PageProps) {
   const allPages = manga.chapters.flatMap(chapter => chapter.pages);
 
   return (
-    <div className="manga-page-container">
+    <div 
+      className="manga-page-container"
+      style={{
+        '--cover-image': `url(${manga.coverImage})`,
+      } as React.CSSProperties}
+    >
+      <div className="manga-page-background-overlay"></div>
       <div className="manga-details-section">
         <div className="manga-details-content">
           <div className="manga-details-cover">
