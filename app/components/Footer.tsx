@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="footer-logos">
                 {!zeitLogoError && (
                   <Image
-                    src="/logos/zeit-logo.png"
+                    src="/logos/zeit-logo.jpeg"
                     alt="ZEIT Logo"
                     width={80}
                     height={80}
@@ -48,7 +48,7 @@ export default function Footer() {
                 )}
                 {!aracajuLogoError && (
                   <Image
-                    src="/logos/zeit-aracaju-logo.png"
+                    src="/logos/zeit-aracaju-logo.jpeg"
                     alt="ZEIT Aracaju Logo"
                     width={120}
                     height={60}

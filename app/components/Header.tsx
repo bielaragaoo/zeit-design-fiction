@@ -14,7 +14,7 @@ export default function Header() {
         <Link href="/home" className="logo">
           {!logoError ? (
             <Image
-              src="/logos/zeit-logo.png"
+              src="/logos/zeit-logo.jpeg"
               alt="ZEIT Logo"
               width={50}
               height={50}
