@@ -1,6 +1,12 @@
+'use client';
+
+import Image from 'next/image';
+import { useState } from 'react';
 import './Footer.css';
 
 export default function Footer() {
+  const [zeitLogoError, setZeitLogoError] = useState(false);
+  const [aracajuLogoError, setAracajuLogoError] = useState(false);
   return (
     <footer className="site-footer">
       <div className="footer-container">
@@ -10,7 +16,7 @@ export default function Footer() {
             <p className="footer-text">Histórias originais de mangá</p>
           </div>
           
-          <div className="footer-section">
+          <div className="footer-section footer-section-social">
             <h4 className="footer-subtitle">Redes Sociais</h4>
             <div className="social-links">
               <a href="https://instagram.com/zeitcapituloaracaju" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
@@ -25,6 +31,35 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          {(zeitLogoError === false || aracajuLogoError === false) && (
+            <div className="footer-section footer-section-logos">
+              <div className="footer-logos">
+                {!zeitLogoError && (
+                  <Image
+                    src="/logos/zeit-logo.png"
+                    alt="ZEIT Logo"
+                    width={80}
+                    height={80}
+                    className="footer-logo"
+                    unoptimized
+                    onError={() => setZeitLogoError(true)}
+                  />
+                )}
+                {!aracajuLogoError && (
+                  <Image
+                    src="/logos/zeit-aracaju-logo.png"
+                    alt="ZEIT Aracaju Logo"
+                    width={120}
+                    height={60}
+                    className="footer-logo footer-logo-aracaju"
+                    unoptimized
+                    onError={() => setAracajuLogoError(true)}
+                  />
+                )}
+              </div>
+            </div>
+          )}
         </div>
         
         <div className="footer-bottom">

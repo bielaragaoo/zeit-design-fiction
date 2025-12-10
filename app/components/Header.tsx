@@ -1,12 +1,30 @@
+'use client';
+
 import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
 import './Header.css';
 
 export default function Header() {
+  const [logoError, setLogoError] = useState(false);
+
   return (
     <header className="site-header">
       <div className="header-container">
         <Link href="/home" className="logo">
-          <h1 className="logo-text">Zeit Design Fiction</h1>
+          {!logoError ? (
+            <Image
+              src="/logos/zeit-logo.png"
+              alt="ZEIT Logo"
+              width={50}
+              height={50}
+              className="header-logo"
+              unoptimized
+              onError={() => setLogoError(true)}
+            />
+          ) : (
+            <h1 className="logo-text">Zeit Design Fiction</h1>
+          )}
         </Link>
         <nav className="main-nav">
           <Link href="/home" className="nav-link">Home</Link>

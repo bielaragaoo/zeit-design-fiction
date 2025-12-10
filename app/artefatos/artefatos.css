@@ -60,29 +60,13 @@
   text-align: center;
 }
 
-.persona-group {
-  margin-bottom: 60px;
-}
-
-.persona-group:last-child {
-  margin-bottom: 0;
-}
-
-.persona-group-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  color: var(--accent);
-  text-align: left;
-}
-
-.artefatos-grid {
+.artefatos-videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 40px;
 }
 
-.artefato-card {
+.artefato-video-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -90,40 +74,39 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.artefato-card:hover {
+.artefato-video-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(255, 107, 107, 0.1);
 }
 
-.artefato-image-container {
+.artefato-video-container {
   width: 100%;
-  height: 300px;
   position: relative;
   background: var(--bg-primary);
   overflow: hidden;
 }
 
-.artefato-image {
+.artefato-video {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 20px;
+  height: auto;
+  display: block;
+  max-height: 600px;
 }
 
-.artefato-info {
-  padding: 24px;
+.artefato-video-info {
+  padding: 32px;
 }
 
-.artefato-name {
-  font-size: 18px;
-  font-weight: 600;
+.artefato-video-persona {
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 16px;
-  color: var(--text-primary);
+  color: var(--accent);
 }
 
-.artefato-description {
-  font-size: 15px;
-  line-height: 1.7;
+.artefato-video-description {
+  font-size: 16px;
+  line-height: 1.8;
   color: var(--text-secondary);
   text-align: justify;
 }
@@ -256,27 +239,27 @@
     font-size: 24px;
   }
 
-  .artefatos-grid {
+  .artefatos-videos-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .artefato-image-container {
-    height: 250px;
+  .artefato-video-info {
+    padding: 24px;
+  }
+
+  .artefato-video-persona {
+    font-size: 20px;
+  }
+
+  .artefato-video-description {
+    font-size: 15px;
   }
 
   .artefatos-gerais {
     grid-template-columns: 1fr;
   }
 
-  .persona-group-title {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .persona-group {
-    margin-bottom: 40px;
-  }
 
   .artefato-geral-header {
     padding: 20px;

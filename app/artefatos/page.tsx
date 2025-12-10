@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import ArtefatoGeral from './ArtefatoGeral';
 import './artefatos.css';
 
@@ -7,56 +6,20 @@ export default function ArtefatosPage() {
     {
       name: 'Lara',
       persona: 'Lara Valença',
-      artefatos: [
-        {
-          nome: 'Sistema de Mapeamento Holográfico de Acessibilidade',
-          description: 'Sistema de Mapeamento Holográfico de Acessibilidade, composto por uma esfera de escaneamento que se conecta à cadeira de rodas do usuário. Este dispositivo varre o ambiente em 360 graus e gera um holograma 3D completo do espaço. O usuário visualiza este mapa holográfico em tempo real através de um dispositivo visual (como óculos ou lentes de contato), permitindo uma compreensão total do ambiente social. O objetivo é humanizar a navegação em locais públicos, aumentando a acessibilidade e a percepção espacial do usuário.',
-          image: '/artefatos/lara-esfera.png',
-          imageAlt: 'Lara - Esfera de Escaneamento'
-        },
-        {
-          nome: 'Esfera Holográfica (Variação)',
-          description: 'Variação do sistema de mapeamento holográfico de acessibilidade.',
-          image: '/artefatos/lara-esfera-2.png',
-          imageAlt: 'Lara - Esfera Holográfica'
-        }
-      ]
+      video: '/videos/lara-esfera.mp4',
+      description: 'Lara criou Sistema de Mapeamento Holográfico de Acessibilidade, composto por uma esfera de escaneamento que se conecta à cadeira de rodas do usuário. Este dispositivo varre o ambiente em 360 graus e gera um holograma 3D completo do espaço. O usuário visualiza este mapa holográfico em tempo real através de um dispositivo visual (como óculos ou lentes de contato), permitindo uma compreensão total do ambiente social. O objetivo é humanizar a navegação em locais públicos, aumentando a acessibilidade e a percepção espacial do usuário.'
     },
     {
       name: 'Damião',
       persona: 'Damião "Dami" Luembe',
-      artefatos: [
-        {
-          nome: 'Gerador de Avatar',
-          description: 'Equipamento/hardware auricular que cria pequenos hologramas para traduzir LIBRAS para a língua falada e da língua falada para LIBRAS. Será utilizado em empresas e órgãos públicos.',
-          image: '/artefatos/dami-artefato.png',
-          imageAlt: 'Dami - Gerador de Avatar'
-        },
-        {
-          nome: 'Auricular Tradutor',
-          description: 'Dispositivo auricular para tradução de LIBRAS em tempo real.',
-          image: '/artefatos/dami-auricular.png',
-          imageAlt: 'Dami - Auricular'
-        },
-        {
-          nome: 'Tradutor de Linguagem de Sinais',
-          description: 'Sistema de tradução de linguagem de sinais para comunicação acessível.',
-          image: '/artefatos/dami-tradutor.png',
-          imageAlt: 'Dami - Tradutor de Linguagem de Sinais'
-        }
-      ]
+      video: '/videos/dami-tradutor.mp4',
+      description: 'Damião criou Gerador de Avatar, equipamento/hardware auricular que cria pequenos hologramas para traduzir LIBRAS para a língua falada e da língua falada para LIBRAS. Será utilizado em empresas e órgãos públicos.'
     },
     {
       name: 'Akari',
       persona: 'Akari Mizuta',
-      artefatos: [
-        {
-          nome: 'Sistema Inteligente de Upcycling para Centros de Triagem',
-          description: 'Equipamento que escaneia resíduos e, em vez de focar apenas no material, analisa a geometria e a forma existente de cada item. Com base nessa análise, o sistema gera sugestões criativas de "complemento por adição", indicando como novas peças podem ser anexadas ou modificações podem ser feitas para transformar o resíduo – que iria para o lixo – em um novo produto funcional, aproveitando sua estrutura original e dando-lhe uma nova utilidade.',
-          image: '/artefatos/akari-centro-triagem.png',
-          imageAlt: 'Akari - Centro de Triagem'
-        }
-      ]
+      video: '/videos/akari-centro-triagem.mp4',
+      description: 'Akari criou Sistema Inteligente de Upcycling para Centros de Triagem, um equipamento que escaneia resíduos e, em vez de focar apenas no material, analisa a geometria e a forma existente de cada item. Com base nessa análise, o sistema gera sugestões criativas de "complemento por adição", indicando como novas peças podem ser anexadas ou modificações podem ser feitas para transformar o resíduo – que iria para o lixo – em um novo produto funcional, aproveitando sua estrutura original e dando-lhe uma nova utilidade.'
     }
   ];
 
@@ -64,56 +27,20 @@ export default function ArtefatosPage() {
     {
       name: 'Iara',
       persona: 'Iara',
-      artefatos: [
-        {
-          nome: 'Impressora 3D Bio-regenerativa',
-          description: 'Impressora 3D Bio-regenerativa que fabrica tecidos curativos personalizados diretamente sobre a ferida. O sistema primeiro analisa o DNA do paciente para otimizar a compatibilidade biológica e, em seguida, imprime um curativo avançado em camadas. Esse tecido contém agentes hemostáticos para estancar o sangramento e uma matriz de hidrogel e alginato para acelerar drasticamente a cicatrização. Ao ser aplicado, o material também libera substâncias que proporcionam um efeito anestésico, aliviando imediatamente a dor no local e, adicionalmente, pode ser personalizado esteticamente para cobrir ou suavizar imperfeições como quelóides e cicatrizes.',
-          image: '/artefatos/iara-impressora.png',
-          imageAlt: 'Iara - Impressora 3D Bio-regenerativa'
-        },
-        {
-          nome: 'Pele Bio-regenerativa',
-          description: 'Tecnologia de pele bio-regenerativa desenvolvida por Iara para cicatrização e regeneração de tecidos.',
-          image: '/artefatos/iara-pele.png',
-          imageAlt: 'Iara - Pele Bio-regenerativa'
-        }
-      ]
+      video: '/videos/iara-impressora.mp4',
+      description: 'Iara criou uma Impressora 3D Bio-regenerativa que fabrica tecidos curativos personalizados diretamente sobre a ferida. O sistema primeiro analisa o DNA do paciente para otimizar a compatibilidade biológica e, em seguida, imprime um curativo avançado em camadas. Esse tecido contém agentes hemostáticos para estancar o sangramento e uma matriz de hidrogel e alginato para acelerar drasticamente a cicatrização. Ao ser aplicado, o material também libera substâncias que proporcionam um efeito anestésico, aliviando imediatamente a dor no local e, adicionalmente, pode ser personalizado esteticamente para cobrir ou suavizar imperfeições como quelóides e cicatrizes.'
     },
     {
       name: 'Theo',
       persona: 'Theo',
-      artefatos: [
-        {
-          nome: 'Ressoar - Tiara Didática Sensorial',
-          description: 'Ressoar é um dispositivo vestível (uma tiara leve) que utiliza computação espacial combinada com haptics acessível. Ela não é um óculos de realidade virtual que isola o usuário; em vez disso, ela projeta camadas de informação visual, auditiva e sensorial (pequenas vibrações táteis) que se integram ao ambiente real do usuário.',
-          image: '/artefatos/theo-tiara.png',
-          imageAlt: 'Theo - Tiara Didática Sensorial'
-        },
-        {
-          nome: 'Ressoar - Variação 2',
-          description: 'Variação do dispositivo Ressoar para aprendizado sensorial.',
-          image: '/artefatos/theo-tiara-2.png',
-          imageAlt: 'Theo - Tiara 2'
-        },
-        {
-          nome: 'Ressoar - Variação 3',
-          description: 'Variação do dispositivo Ressoar para aprendizado sensorial.',
-          image: '/artefatos/theo-tiara-3.png',
-          imageAlt: 'Theo - Tiara 3'
-        }
-      ]
+      video: '/videos/theo-tiara.mp4',
+      description: 'Theo criou o Ressoar, um dispositivo vestível (uma tiara leve) que utiliza computação espacial combinada com haptics acessível. Ela não é um óculos de realidade virtual que isola o usuário; em vez disso, ela projeta camadas de informação visual, auditiva e sensorial (pequenas vibrações táteis) que se integram ao ambiente real do usuário.'
     },
     {
       name: 'Farid',
       persona: 'Farid Al-Khatib',
-      artefatos: [
-        {
-          nome: 'Protocolo Ágora',
-          description: 'Protocolo Ágora (Rede Cívica de Verificação). É um protocolo público e auditável que se integra a redes sociais e aplicativos cívicos. Ele funciona como uma camada de verificação e mediação.',
-          image: '/artefatos/farid-protocolo.png',
-          imageAlt: 'Farid - Protocolo Ágora'
-        }
-      ]
+      video: '/videos/farid-protocolo.mp4',
+      description: 'Farid criou o Protocolo Ágora (Rede Cívica de Verificação). É um protocolo público e auditável que se integra a redes sociais e aplicativos cívicos. Ele funciona como uma camada de verificação e mediação.'
     }
   ];
 
@@ -131,60 +58,50 @@ export default function ArtefatosPage() {
       <section className="artefatos-content">
         <div className="artefatos-section">
           <h2 className="artefatos-section-title">Para Profissionais</h2>
-          {profissionais.map((persona, personaIndex) => (
-            <div key={personaIndex} className="persona-group">
-              <h3 className="persona-group-title">{persona.persona}</h3>
-              <div className="artefatos-grid">
-                {persona.artefatos.map((artefato, artefatoIndex) => (
-                  <div key={artefatoIndex} className="artefato-card">
-                    <div className="artefato-image-container">
-                      <Image
-                        src={artefato.image}
-                        alt={artefato.imageAlt}
-                        width={600}
-                        height={400}
-                        className="artefato-image"
-                        unoptimized
-                      />
-                    </div>
-                    <div className="artefato-info">
-                      <h4 className="artefato-name">{artefato.nome}</h4>
-                      <p className="artefato-description">{artefato.description}</p>
-                    </div>
-                  </div>
-                ))}
+          <div className="artefatos-videos-grid">
+            {profissionais.map((persona, index) => (
+              <div key={index} className="artefato-video-card">
+                <div className="artefato-video-container">
+                  <video
+                    controls
+                    className="artefato-video"
+                    preload="metadata"
+                  >
+                    <source src={persona.video} type="video/mp4" />
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                </div>
+                <div className="artefato-video-info">
+                  <h3 className="artefato-video-persona">{persona.persona}</h3>
+                  <p className="artefato-video-description">{persona.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="artefatos-section">
           <h2 className="artefatos-section-title">Para Estudantes</h2>
-          {estudantes.map((persona, personaIndex) => (
-            <div key={personaIndex} className="persona-group">
-              <h3 className="persona-group-title">{persona.persona}</h3>
-              <div className="artefatos-grid">
-                {persona.artefatos.map((artefato, artefatoIndex) => (
-                  <div key={artefatoIndex} className="artefato-card">
-                    <div className="artefato-image-container">
-                      <Image
-                        src={artefato.image}
-                        alt={artefato.imageAlt}
-                        width={600}
-                        height={400}
-                        className="artefato-image"
-                        unoptimized
-                      />
-                    </div>
-                    <div className="artefato-info">
-                      <h4 className="artefato-name">{artefato.nome}</h4>
-                      <p className="artefato-description">{artefato.description}</p>
-                    </div>
-                  </div>
-                ))}
+          <div className="artefatos-videos-grid">
+            {estudantes.map((persona, index) => (
+              <div key={index} className="artefato-video-card">
+                <div className="artefato-video-container">
+                  <video
+                    controls
+                    className="artefato-video"
+                    preload="metadata"
+                  >
+                    <source src={persona.video} type="video/mp4" />
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                </div>
+                <div className="artefato-video-info">
+                  <h3 className="artefato-video-persona">{persona.persona}</h3>
+                  <p className="artefato-video-description">{persona.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="artefatos-section">
