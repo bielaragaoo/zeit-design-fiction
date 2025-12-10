@@ -4,8 +4,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Zeit Design Fiction - Mangás',
-  description: 'Explore histórias de mangá criativas',
+  title: 'Zeit Aracaju - Design Fiction',
+  description: 'Zeit Aracaju: Design Fiction – Os Futuros do Profissional de Design',
 }
 
 export default function RootLayout({
