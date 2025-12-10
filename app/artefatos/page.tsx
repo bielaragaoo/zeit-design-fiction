@@ -50,7 +50,7 @@ export default function ArtefatosPage() {
         <div className="artefatos-hero-content">
           <h1 className="artefatos-title">Personas e Artefatos</h1>
           <p className="artefatos-subtitle">
-            Os artefatos de futuros são o toque mágico da design fiction na Zeit Aracaju: <strong>16 criações fictícias</strong> que tornam os cenários palpáveis. Inspirados nos nossos 8 cenários e 6 personas, esses "objetos especulativos" – de apps a wearables – provocam: "E se isso existisse hoje?". Desenvolvidos em colaboração com o aluno da UNIT, eles foram exibidos na Semana de Design, gerando debates sobre inovação ética e prática.
+            Os artefatos de futuros são o toque mágico da design fiction na Zeit Aracaju: <strong>14 criações fictícias</strong> que tornam os cenários palpáveis. Inspirados nos nossos 8 cenários e 6 personas, esses "objetos especulativos" – de apps a wearables – provocam: "E se isso existisse hoje?". Desenvolvidos em colaboração com o aluno da UNIT, eles foram exibidos na Semana de Design, gerando debates sobre inovação ética e prática.
           </p>
         </div>
       </section>

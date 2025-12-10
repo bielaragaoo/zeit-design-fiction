@@ -126,6 +126,24 @@
   margin-bottom: 0;
 }
 
+.framework-team-section {
+  padding: 60px 20px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+}
+
+.framework-team-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.framework-team-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 768px) {
   .framework-hero {
     padding: 60px 16px 40px;
@@ -160,5 +178,9 @@
 
   .framework-conclusion {
     padding: 24px;
+  }
+
+  .framework-team-section {
+    padding: 40px 16px;
   }
 }

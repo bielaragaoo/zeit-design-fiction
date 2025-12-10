@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './framework.css';
 
 export default function FrameworkPage() {
@@ -81,6 +82,19 @@ export default function FrameworkPage() {
           <p className="conclusion-text">
             Quer se aprofundar? Explore os cenários e artefatos em nosso site. – Quem sabe, você não contribui com sua própria visão?
           </p>
+        </div>
+      </section>
+
+      <section className="framework-team-section">
+        <div className="framework-team-content">
+          <Image
+            src="/images/framework-team.jpg"
+            alt="Equipe Framework Zeit Aracaju"
+            width={1200}
+            height={800}
+            className="framework-team-image"
+            unoptimized
+          />
         </div>
       </section>
     </div>

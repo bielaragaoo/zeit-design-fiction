@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './home.css';
 
 export default function HomePage() {
@@ -38,6 +39,19 @@ export default function HomePage() {
           <p className="home-paragraph home-signature">
             Desenvolvido com paixão pela equipe Zeit Aracaju. Vamos co-criar o amanhã?
           </p>
+        </div>
+      </section>
+
+      <section className="home-team-section">
+        <div className="home-team-content">
+          <Image
+            src="/images/equipe.jpg"
+            alt="Equipe Zeit Aracaju"
+            width={1200}
+            height={800}
+            className="home-team-image"
+            unoptimized
+          />
         </div>
       </section>
     </div>
