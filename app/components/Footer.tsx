@@ -6,7 +6,6 @@ import './Footer.css';
 
 export default function Footer() {
   const [zeitLogoError, setZeitLogoError] = useState(false);
-  const [aracajuLogoError, setAracajuLogoError] = useState(false);
   return (
     <footer className="site-footer">
       <div className="footer-container">
@@ -32,31 +31,18 @@ export default function Footer() {
             </div>
           </div>
 
-          {(zeitLogoError === false || aracajuLogoError === false) && (
+          {!zeitLogoError && (
             <div className="footer-section footer-section-logos">
               <div className="footer-logos">
-                {!zeitLogoError && (
-                  <Image
-                    src="/logos/zeit-logo.jpeg"
-                    alt="ZEIT Logo"
-                    width={80}
-                    height={80}
-                    className="footer-logo"
-                    unoptimized
-                    onError={() => setZeitLogoError(true)}
-                  />
-                )}
-                {!aracajuLogoError && (
-                  <Image
-                    src="/logos/zeit-aracaju-logo.jpeg"
-                    alt="ZEIT Aracaju Logo"
-                    width={120}
-                    height={60}
-                    className="footer-logo footer-logo-aracaju"
-                    unoptimized
-                    onError={() => setAracajuLogoError(true)}
-                  />
-                )}
+                <Image
+                  src="/logos/zeit-logo.jpeg"
+                  alt="ZEIT Logo"
+                  width={80}
+                  height={80}
+                  className="footer-logo"
+                  unoptimized
+                  onError={() => setZeitLogoError(true)}
+                />
               </div>
             </div>
           )}
